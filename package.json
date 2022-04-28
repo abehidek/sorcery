@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"next dev\" \"sass --watch Home.module.scss output.css\"",
+    "sass": "sass --watch Home.module.scss output.css",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "concurrently": "^7.1.0",
     "next": "12.1.5",
     "react": "18.1.0",
     "react-dom": "18.1.0",
