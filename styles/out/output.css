@@ -9,11 +9,19 @@ body {
   box-sizing: border-box;
 }
 
-body p {
-  color: green;
-}
-body a {
-  color: red;
+h1 {
+  font-size: 1.875rem;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
 /*# sourceMappingURL=output.css.map */

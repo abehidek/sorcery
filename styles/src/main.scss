@@ -10,9 +10,31 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  p {
-    color: green;
+$base01: #ECEFF4;
+$base02: #E5E9F0;
+$base03: #D8DEE9;
+
+$text-3xl: 2.2rem;
+$text-2xl: 1.875rem;
+$text-xl: 1.5rem;
+$text-lg: 1.25rem;
+$text-base: 1rem;
+$text-sm: 0.875rem;
+$text-xs: 0.75rem;
+
+h1 {
+  font-size: $text-2xl;
+}
+h2 {
+  font-size: $text-xl;
+}
+h3 {
+  font-size: $text-lg;
+}
+p {
+  font-size: $text-base;
+}
+
   }
   a {
     color: red;
