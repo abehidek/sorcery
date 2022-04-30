@@ -24,4 +24,29 @@ h3 {
 p {
   font-size: 1rem;
 }
+
+main {
+  background: #ECEFF4;
+  padding: 1rem 2.5rem;
+}
+
+.card {
+  background: #D8DEE9;
+  padding: 1rem 1.5rem;
+  width: 10rem;
+  border-radius: 0.35rem;
+}
+.card h1 {
+  font-size: 1.625rem;
+}
+.card h2 {
+  font-size: 1.3rem;
+}
+.card h3 {
+  font-size: 1.1rem;
+}
+.card p {
+  font-size: 0.9rem;
+}
+
 /*# sourceMappingURL=output.css.map */

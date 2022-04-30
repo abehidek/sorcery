@@ -35,8 +35,25 @@ p {
   font-size: $text-base;
 }
 
+main {
+  background: $base01;
+  padding: 1rem 2.5rem;
+}
+.card {
+  background: $base03;
+  padding: 1rem 1.5rem;
+  width: 10rem;
+  border-radius: 0.35rem;
+  h1 {
+    font-size: $text-2xl - 0.25rem;
   }
-  a {
-    color: red;
+  h2 {
+    font-size: $text-xl - 0.2rem;
+  }
+  h3 {
+    font-size: $text-lg - 0.15rem;
+  }
+  p {
+    font-size: $text-base - 0.1rem;
   }
 }
