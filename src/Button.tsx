@@ -10,6 +10,9 @@ const buttonStyles = cva("bg-blue-500 text-white", {
       md: "px-6 py-4 text-2xl",
       lg: "px-8 py-6 text-2xl",
     },
+    fullWidth: {
+      true: "w-full",
+    },
   },
   defaultVariants: {
     size: "xs",
@@ -25,10 +28,16 @@ export const Button = ({
   children,
   onClickFn,
   size,
+  className,
+  fullWidth,
   ...props
 }: ButtonProps) => {
   return (
-    <button className={buttonStyles({ size })} {...props} onClick={onClickFn}>
+    <button
+      className={buttonStyles({ fullWidth, size, className })}
+      {...props}
+      onClick={onClickFn}
+    >
       {children}
     </button>
   );

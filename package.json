@@ -1,6 +1,6 @@
 {
   "name": "sorcery-ui",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simple and reusable React component library for my side projects.",
   "scripts": {
     "clean": "shx rm -r dist",
