@@ -9,5 +9,5 @@ stories.add("Button", () => {
   const setChange = () => {
     setValue(value === "Hello" ? "Bye" : "Hello");
   };
-  return <Button onClick={setChange}>{value}</Button>;
+  return <Button onClickFn={setChange}>{value}</Button>;
 });

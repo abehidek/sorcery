@@ -18,6 +18,7 @@ specifiers:
   '@types/react-dom': ^18.0.10
   autoprefixer: ^10.4.13
   babel-loader: ^8.3.0
+  class-variance-authority: ^0.4.0
   cssnano: ^5.1.14
   postcss: ^8.4.20
   postcss-cli: ^10.1.0
@@ -27,6 +28,9 @@ specifiers:
   tailwindcss: ^3.2.4
   tsup: ^6.5.0
   typescript: ^4.9.4
+
+dependencies:
+  class-variance-authority: 0.4.0_typescript@4.9.4
 
 devDependencies:
   '@babel/core': 7.20.7
@@ -4510,6 +4514,17 @@ packages:
       isobject: 3.0.1
       static-extend: 0.1.2
     dev: true
+
+  /class-variance-authority/0.4.0_typescript@4.9.4:
+    resolution: {integrity: sha512-74enNN8O9ZNieycac/y8FxqgyzZhZbxmCitAtAeUrLPlxjSd5zA7LfpprmxEcOmQBnaGs5hYhiSGnJ0mqrtBLQ==}
+    peerDependencies:
+      typescript: '>= 4.5.5 < 5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      typescript: 4.9.4
+    dev: false
 
   /clean-css/4.2.4:
     resolution: {integrity: sha512-EJUDT7nDVFDvaQgAo2G/PJvxmp1o/c6iXLbswsBbUFXi1Nr+AjA2cKmfbKDMjMvzEe75g3P6JkaDDAKk96A85A==}
@@ -10566,7 +10581,6 @@ packages:
     resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /uglify-js/3.17.4:
     resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}

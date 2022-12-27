@@ -1,12 +1,34 @@
 import React from "react";
+import "./tailwind.css";
+import { cva } from "class-variance-authority";
+import type { VariantProps } from "class-variance-authority";
 
-export interface ButtonProps {
-  children: React.ReactNode;
-  onClick: () => void;
-}
-export const Button = ({ children, onClick }: ButtonProps) => {
+const buttonStyles = cva("bg-blue-500 text-white", {
+  variants: {
+    size: {
+      xs: "px-4 py-2 text-2xl",
+      md: "px-6 py-4 text-2xl",
+      lg: "px-8 py-6 text-2xl",
+    },
+  },
+  defaultVariants: {
+    size: "xs",
+  },
+});
+
+export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
+  VariantProps<typeof buttonStyles> & {
+    children: React.ReactNode;
+    onClickFn: () => void;
+  };
+export const Button = ({
+  children,
+  onClickFn,
+  size,
+  ...props
+}: ButtonProps) => {
   return (
-    <button className="bg-blue-500 px-4 py-2 text-white" onClick={onClick}>
+    <button className={buttonStyles({ size })} {...props} onClick={onClickFn}>
       {children}
     </button>
   );
