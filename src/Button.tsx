@@ -5,5 +5,9 @@ export interface ButtonProps {
   onClick: () => void;
 }
 export const Button = ({ children, onClick }: ButtonProps) => {
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <button className="bg-blue-500 px-4 py-2 text-white" onClick={onClick}>
+      {children}
+    </button>
+  );
 };

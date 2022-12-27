@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import { Button } from "./Button";
+import { Button } from "./index";
+import "./tailwind.css";
 
 const stories = storiesOf("Button", module);
 stories.add("Button", () => {
