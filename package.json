@@ -1,6 +1,6 @@
 {
   "name": "sorcery-ui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple and reusable React component library for my side projects.",
   "scripts": {
     "clean": "shx rm -r dist",
@@ -31,7 +31,9 @@
     "@types/react-dom": "^18.0.10",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.3.0",
+    "cssnano": "^5.1.14",
     "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "shx": "^0.3.4",
